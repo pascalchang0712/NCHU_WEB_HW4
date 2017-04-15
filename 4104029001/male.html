@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>For Men's</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  </head>
+  <body class='main'>
+
+    <ul class='navbar'>
+      <button class='navbar'id='mrunning' >Running</button>
+      <button class='navbar'id='mbascketball' >Basketball</button>
+      <button class='navbar'id='msports' >Lifestyle</button>
+    </ul>
+
+      <p id='intro1'class="intro"style='display:none;'>
+           Nike men’s running shoes feature the latest innovations to help you get more from your run, whatever your experience level, distance and preferences.<br>
+           For a minimalist like running shoe, try a natural running style.If you like a softer feel underfoot, check out cushioned styles.<br>
+           Or shop responsive styles if you prefer a springy, lightweight running shoe.Nike also offers racing shoes for competitive runners.<br>
+           Find the perfect Nike men’s running shoe for you and get ready for your next race with Nike+ Run Club Training Plans.<br>
+           Learn about common running myths around plantar fasciitis, barefoot running and pronation running shoes from the Nike+ Run Club.</p>
+      <p id='intro2'class="intro"style='display:none;'>
+          Hit the hardwood in Nike men's basketball shoes, featuring the best in basketball sneaker technology.<br>
+          Choose from a variety of styles and colors, including signature basketball shoes from LeBron and KD.<br>
+          Find sneakers with Nike Zoom and Nike Flyknit technology and feel what it’s like to play the game you love with shoes designed for the world’s most explosive athletes.<br>
+          Shop basketball shoes for women, girls and boys, and find the sneakers you need to take on all challengers.<br>
+          </p>
+      <p id='intro3'class="intro"style='display:none;'>
+          Whether you’re at the gym, in a high-intensity bootcamp or on a run, Nike men’s training shoes have you covered.<br>
+          Nike offers the latest styles, whether you are looking for a workout, cross-training or athletic shoe.<br>
+          Gear up for your workout with men's athletic clothing or check out the selection of training backpacks and bags to take to the gym.<br>
+          </p>
+    <br><br>
+
+    <div>
+      <button class="content" id='mr1'style="display:none;">NIKE FREE RN FLYKNIT 2017 <br>
+          <img id='mr1b'style="display:none;" src='mr1b.jpg' height="250" width="250">
+          <img id='mr1g' style="display:none;" src='mr1g.jpg' height="250" width="250"></button>
+      <button class="content" id='mr2'style="display:none;">NIKE FREE RN MOTION FLYKNIT 2017<br>
+          <img id='mr2g' style="display:none;" src='mr2.jpg' height="250" width="250"></button>
+      <button class="content"id='mr3'style="display:none;">NIKE LUNAREPIC LOW FLYKNIT 2<br>
+          <img id='mr3blue'style="display:none;" src='mr3blue.jpg' height="250" width="250">
+          <img id='mr3black'style="display:none;" src='mr3black.jpg' height="250" width="250"></button>
+
+
+      <button class="content"id='mb1'style="display:none;">NIKE PG 1 EP<br>
+          <img id='mb1' style="display:none;" src='mb1.jpg' height="250" width="250"></button>
+      <button class="content"id='mb2'style="display:none;">AIR JORDAN XXXI<br>
+          <img id='mb2' style="display:none;" src='mb2.jpg' height="250" width="250"></button>
+      <button class="content"id='mb3'style="display:none;">KOBE A.D.NXT<br>
+          <img id='mb3' style="display:none;" src='mb3.jpg' height="250" width="250"></button>
+
+
+      <button class="content"id='ms1'style="display:none;">NIKE AIR MAX PLUS QS<br>
+          <img id='ms1' style="display:none;" src='ms1.jpg' height="250" width="250"></button>
+      <button class="content"id='ms2'style="display:none;">NIKE AIR MAX 95 PREMIUM QS<br>
+          <img id='ms2'style="display:none;" src='ms2.jpg' height="250" width="250"></button>
+      <button class="content"id='ms3'style="display:none;">NIKE AIR MAX ZERO<br>
+          <img id='ms3' style="display:none;" src='ms3.jpg' height="250" width="250"></button>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <button class='tomain' position="fixed"><a class= 'navbar'href="index.html" >Back</a></button>
+
+          <script>
+                  $('document').ready(function(){
+
+                  $('button').click(function(){
+                    $('button').blur();
+                  });
+                  $('#mrunning').mouseenter(function(){
+                      $('#mrunning').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro1').slideDown();
+                      $('#mrunning').mouseleave(function(){
+                          $('#mrunning').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro1').slideUp();
+                      });
+                  });
+                  $('#mbascketball').mouseenter(function(){
+                      $('#mbascketball').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro2').slideDown();
+                      $('#mbascketball').mouseleave(function(){
+                          $('#mbascketball').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro2').slideUp();
+                      });
+                  });
+                  $('#msports').mouseenter(function(){
+                      $('#msports').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro3').slideDown();
+                      $('#msports').mouseleave(function(){
+                          $('#msports').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro3').slideUp();
+                      });
+                  });
+                  $('#mrunning').click(function() {
+                    $('#mr1').fadeToggle(500);$('#mr2').fadeToggle(500);$('#mr3').fadeToggle(500);
+                    $('#mb1').hide();$('#mb2').hide();$('#mb3').hide();
+                    $('#ms1').hide();$('#ms2').hide();$('#ms3').hide();
+                    $('img').hide();
+                });
+                $('#mbascketball').click(function() {
+                    $('#mr1').hide();$('#mr2').hide();$('#mr3').hide();
+                    $('#mb1').fadeToggle(500);$('#mb2').fadeToggle(500);$('#mb3').fadeToggle(500);
+                    $('#ms1').hide();$('#ms2').hide();$('#ms3').hide();
+                    $('img').hide();
+                });
+                $('#msports').click(function() {
+                    $('#mr1').hide();$('#mr2').hide();$('#mr3').hide();
+                    $('#mb1').hide(); $('#mb2').hide();$('#mb3').hide();
+                    $('#ms1').fadeToggle(500);$('#ms2').fadeToggle(500);$('#ms3').fadeToggle(500);
+                    $('img').hide();
+                });
+                $('#mr1').click(function() {
+                    $('img').fadeOut();
+                    $('#mr1>img').fadeIn();
+                });
+                $('#mr2').click(function() {
+                    $('img').fadeOut();
+                    $('#mr2>img').fadeIn();
+                });
+                $('#mr3').click(function() {
+                    $('img').fadeOut();
+                    $('#mr3>img').fadeIn();
+                });
+                $('#mb1').click(function() {
+                    $('img').fadeOut();
+                    $('#mb1>img').fadeIn();
+                });
+                $('#mb2').click(function() {
+                    $('img').fadeOut();
+                    $('#mb2>img').fadeIn();
+                });
+                $('#mb3').click(function() {
+                    $('img').fadeOut();
+                    $('#mb3>img').fadeIn();
+                });
+                $('#ms1').click(function() {
+                    $('img').fadeOut();
+                    $('#ms1>img').fadeIn();
+                });
+                $('#ms2').click(function() {
+                    $('img').fadeOut();
+                    $('#ms2>img').fadeIn();
+                });
+                $('#ms3').click(function() {
+                    $('img').fadeOut();
+                    $('#ms3>img').fadeIn();
+                });
+              });
+
+          </script>
+  </body>
+</html>

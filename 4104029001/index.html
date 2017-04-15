@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Shoes</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+        $('document').ready(function() {
+            $('#male').click(function() {
+                $("#mrunning").slideToggle();
+                $("#mbascketball").slideToggle();
+                $("#msports").slideToggle();
+                $("li.content").hide();
+                $('img').hide();
+            });
+            $('#male').mouseenter(function(){
+                $('#male>a').removeClass('navbar').addClass('navbarEnter');
+                $('#male').mouseleave(function(){
+                    $('#male>a').removeClass('navbarEnter').addClass('navbar');
+                });
+            });
+            $('#female').mouseenter(function(){
+                $('#female>a').removeClass('navbar').addClass('navbarEnter');
+                $('#female').mouseleave(function(){
+                    $('#female>a').removeClass('navbarEnter').addClass('navbar');
+                });
+            });
+            $('#about').mouseenter(function(){
+                $('#about>a').removeClass('navbar').addClass('navbarEnter');
+                $('#about').mouseleave(function(){
+                    $('#about>a').removeClass('navbarEnter').addClass('navbar');
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body class="main">
+  <div>
+      <ul class='navbar'>
+          <button class='navbar' id='male'><a class="navbar" href='male.html'>Men's shoes</a> </button>
+          <button class='navbar' id='female'><a class="navbar" href='female.html'> Women's shoes</a></button>
+          <button class='navbar' id='about'><a class="navbar" href='about.html'>About</a> </button>
+
+      </ul>
+
+</div>
+
+
+</body>
+
+</html>

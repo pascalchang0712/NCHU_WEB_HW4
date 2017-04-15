@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>For Women's</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  </head>
+  <body class='main'>
+    <div>
+      <button class='navbar'id='frunning' >Running</ul>
+      <button class='navbar'id='fbascketball' >Basketball</ul>
+      <button class='navbar'id='fsports' >Lifestyle</ul>
+    </div>
+    <p id='intro1'class="intro"style='display:none;'>
+         Nike women's running shoes are designed with innovative features and technologies to help you run your best, whatever your goals and skill level.<br>
+          For a minimalist like shoe, try a natural style. Nike cushioned shoes are plush for a softer landing. And responsive styles are both lightweight and springy.<br>
+          If you’re gearing up for competition, shop the selection of women's racing shoes.<br>
+          Find the right pair of Nike women’s running shoes for you and train for your best race with Nike+ Run Club Training Plans. <br>
+          Learn about common running myths around plantar fasciitis, barefoot running and pronation running shoes from the Nike+ Run Club.</p>
+    <p id='intro2'class="intro"style='display:none;'>
+              Own the game on both ends of the floor and dominate your competition with Nike women’s basketball shoes.<br>
+               Featuring a variety of styles, colors, and signature athlete versions, high-top and low-top women’s basketball shoes complement your personality and style of play.<br>
+                Shop basketball shoes for men, girls and boys and discover the pair of sneakers that'll take your game to the next level.<br>
+              </p>
+    <p id='intro3'class="intro"style='display:none;'>
+        Get better from the ground up with Nike women’s training and gym shoes.Find workout, athletic and cross-training styles to help you conquer any training regimen.<br>
+        Explore the variety of women’s training shoe styles like studio wrap shoes, aerobics shoes and weightlifting shoes, all equipped with the latest Nike technology.<br>
+        Complete your gym look with women’s training tops, sports bras, pants and shorts or explore the Nike yoga collection.<br>
+        </p>
+    <br><br>
+
+    <div>
+      <button class="content" id='fr1'style="display:none;">NIKE FREE RN FLYKNIT 2017 <br>
+          <img id='fr1w'style="display:none;" src='fr1w.jpg' height="250" width="250">
+      <button class="content" id='fr2'style="display:none;">NIKE FREE RN MOTION FLYKNIT 2017<br>
+          <img id='fr2g' style="display:none;" src='fr2g.jpg' height="250" width="250"></button>
+      <button class="content"id='fr3'style="display:none;">NIKE LUNAREPIC LOW FLYKNIT 2<br>
+          <img id='fr3g'style="display:none;" src='fr3g.jpg' height="250" width="250">
+
+
+      <button class="content"id='fb1'style="display:none;">Kyrie 3 iD<br>
+          <img id='fb1' style="display:none;" src='fb1.jpg' height="250" width="250"></button>
+      <button class="content"id='fb2'style="display:none;">LeBron XIV Premium iD<br>
+          <img id='fb2' style="display:none;" src='fb2.jpg' height="250" width="250"></button>
+      <button class="content"id='fb3'style="display:none;">NIKE ZOOM REV<br>
+          <img id='fb3' style="display:none;" src='fb3.jpg' height="250" width="250"></button>
+
+
+      <button class="content"id='fs1'style="display:none;">NIKE AIR PRESTO ULTRA BREATHE<br>
+          <img id='fs1' style="display:none;" src='fs1p.jpg' height="250" width="250"></button>
+      <button class="content"id='fs2'style="display:none;">NIKE SOCK DART BREATHE<br>
+          <img id='fs2'style="display:none;" src='fs2blue.jpg' height="250" width="250"></button>
+      <button class="content"id='fs3'style="display:none;">NIKE AIR HUARACHE ULTRA BREATHE<br>
+          <img id='fs3' style="display:none;" src='fs3black.jpg' height="250" width="250"></button>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <button class='tomain'><a class= 'navbar'href="index.html" >Back</a></button>
+
+          <script>
+                $('document').ready(function(){
+                  $('button').click(function(){
+                    $('button').blur();
+                  });
+                  $('#frunning').mouseenter(function(){
+                      $('#frunning').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro1').slideDown();
+                      $('#frunning').mouseleave(function(){
+                          $('#frunning').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro1').slideUp();
+                      });
+                  });
+                  $('#fbascketball').mouseenter(function(){
+                      $('#fbascketball').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro2').slideDown();
+                      $('#fbascketball').mouseleave(function(){
+                          $('#fbascketball').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro2').slideUp();
+                      });
+                  });
+                  $('#fsports').mouseenter(function(){
+                      $('#fsports').removeClass('navbar').addClass('navbarEnter');
+                      $('#intro3').slideDown();
+                      $('#fsports').mouseleave(function(){
+                          $('#fsports').removeClass('navbarEnter').addClass('navbar');
+                          $('#intro3').slideUp();
+                      });
+                  });
+                  $('#frunning').click(function() {
+                    $('#fr1').fadeToggle(500);$('#fr2').fadeToggle(500);$('#fr3').fadeToggle(500);
+                    $('#fb1').hide();$('#fb2').hide();$('#fb3').hide();
+                    $('#fs1').hide();$('#fs2').hide();$('#fs3').hide();
+                    $('img').hide();
+                });
+                $('#fbascketball').click(function() {
+                    $('#fr1').hide();$('#fr2').hide();$('#fr3').hide();
+                    $('#fb1').fadeToggle(500);$('#fb2').fadeToggle(500);$('#fb3').fadeToggle(500);
+                    $('#fs1').hide();$('#fs2').hide();$('#fs3').hide();
+                    $('img').hide();
+                });
+                $('#fsports').click(function() {
+                    $('#fr1').hide();$('#fr2').hide();$('#fr3').hide();
+                    $('#fb1').hide(); $('#fb2').hide();$('#fb3').hide();
+                    $('#fs1').fadeToggle(500);$('#fs2').fadeToggle(500);$('#fs3').fadeToggle(500);
+                    $('img').hide();
+                });
+                $('#fr1').click(function() {
+                    $('img').fadeOut();
+                    $('#fr1>img').fadeIn();
+                });
+                $('#fr2').click(function() {
+                    $('img').fadeOut();
+                    $('#fr2>img').fadeIn();
+                });
+                $('#fr3').click(function() {
+                    $('img').fadeOut();
+                    $('#fr3>img').fadeIn();
+                });
+                $('#fb1').click(function() {
+                    $('img').fadeOut();
+                    $('#fb1>img').fadeIn();
+                });
+                $('#fb2').click(function() {
+                    $('img').fadeOut();
+                    $('#fb2>img').fadeIn();
+                });
+                $('#fb3').click(function() {
+                    $('img').fadeOut();
+                    $('#fb3>img').fadeIn();
+                });
+                $('#fs1').click(function() {
+                    $('img').fadeOut();
+                    $('#fs1>img').fadeIn();
+                });
+                $('#fs2').click(function() {
+                    $('img').fadeOut();
+                    $('#fs2>img').fadeIn();
+                });
+                $('#fs3').click(function() {
+                    $('img').fadeOut();
+                    $('#fs3>img').fadeIn();
+                });
+              });
+
+          </script>
+  </body>
+</html>

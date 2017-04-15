@@ -1,0 +1,90 @@
+button.navbar{
+  font-size: 60;
+  background-color: white;
+  border-style: none;
+  padding-left: 100;
+  font-family: fantasy;
+  text-decoration: none;
+  }
+  button.navbarEnter{
+    font-size: 60;
+    background-color: #BBB;
+    border-style: none;
+    padding-left: 100;
+    font-family: fantasy;
+    text-decoration: none;
+    }
+ul.catagory{
+  float:left;;
+  font-size: 30;
+  font-style: italic;
+  font-family: fantasy;
+}
+li.navbar{
+  margin-left: 100;
+  float: left;
+}
+button.content{
+  background-color: white;
+  border-style: none;
+  font-family: fantasy;
+  float:left;
+  font-size: 20;
+  padding-left: 100;
+}
+button.contentborder{
+  background-color: #BBB;
+  border-style:solid;
+  font-family: fantasy;
+  float:left;
+  font-size: 20;
+}
+body.main{
+  background:url('mainbg.jpg');
+  background-size:900px 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body.intro{
+  background:url('intro.jpg');
+  background-size:400px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+a.navbar{
+  color: black;
+  text-decoration: none;
+}
+a.navbarenter{
+  color: black;
+  text-decoration: none;
+  background-color: #BBB;
+}
+button.tomain{
+  padding-bottom: 0;
+  font-family:fantasy;
+  font-size: 30;
+  border: none;
+  padding-left: 100;
+  background-color: white;
+}
+p.title{
+  padding-left: 100;
+  font-family: fantasy;
+  float:left;
+  font-size: 40;
+}p.content{
+  padding-left: 100;
+  font-family:sans-serif;
+  float:left;
+  font-size: 20;
+}
+p.intro{
+font-size: 20;
+background-color: white;
+border-style: none;
+padding-left: 100;
+font-family: fantasy;
+text-decoration: none;
+
+}
