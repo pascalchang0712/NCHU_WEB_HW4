@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>Shoes</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <script>
+    $('document').ready(function(){
+      $('p').click(function(){
+        $('p').toggle();
+          });
+      $('img').click(function(){
+        $('img').animate({left: '250px'}).fadeTo(1000 ,0.0);
+          });
+        });
+  </script>
+</head>
+
+
+
+<body class='main'>
+  <p class='title'>
+    Introduction
+    (click for more info)
+  </p>
+  <br>
+  <p class='content'style='display:none'>
+    A glimpse of the latest shoes.<br>
+    Catogorized by their feature and show its picture.<br>
+    For more information enter your mouse into the button above<br>
+    Pick a catagory by left-clicking buttons above ex: running,bascketball,sports<br>
+    Left click the product you interest in to see its appearance<br>
+    <br>
+    Click to hide info<br>
+
+  </p>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <img class='pad' src="logan.jpg" height="150" width="150" margin-left='150'><br>
+  <p class='content'>click icon to vanish</p>
+  <br><br><br><br><br><br>
+  <button float="bottom" class='tomain'><a class= 'navbar'href="index.html" >Back</a></button>
+</body>
+
+</html>
